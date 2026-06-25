@@ -1,0 +1,8 @@
+﻿apiVersion: image.toolkit.fluxcd.io/v1beta2
+kind: ImageRepository
+metadata:
+  name: gitops-app
+  namespace: flux-system
+spec:
+  image: ghcr.io/rupshinde87/gitops-app
+  interval: 1m
