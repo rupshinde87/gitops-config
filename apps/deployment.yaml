@@ -1,4 +1,4 @@
-﻿apiVersion: apps/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: gitops-app
@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: app
-        image: ghcr.io/rupshinde87/gitops-app:v1.0.0 # {"$imagepolicy": "flux-system:gitops-app"}
+        image: ghcr.io/rupshinde87/gitops-app:v1.0.1 # {"$imagepolicy": "flux-system:gitops-app"}
         ports:
         - containerPort: 8080
         readinessProbe:
